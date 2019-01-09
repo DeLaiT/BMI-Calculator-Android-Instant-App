@@ -120,32 +120,33 @@
                 android:text="m"
                 android:textColor="@color/colorPrimary" />
         </FrameLayout>
+
+        <TextView
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@color/colorSecondaryAccent"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:drawablePadding="5dp"
+            android:elevation="3dp"
+            android:focusable="true"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:paddingStart="18dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Calculate"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/submit_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/input_group"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/edit_text_background"
-        android:backgroundTint="@color/colorAccent"
-        android:clickable="true"
-        android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
-        android:drawablePadding="5dp"
-        android:elevation="5dp"
-        android:focusable="true"
-        android:fontFamily="@font/lato_bold"
-        android:gravity="center"
-        android:paddingStart="18dp"
-        android:paddingTop="8dp"
-        android:paddingEnd="8dp"
-        android:paddingBottom="8dp"
-        android:text="Calculate"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18dp" />
 
 </RelativeLayout>
