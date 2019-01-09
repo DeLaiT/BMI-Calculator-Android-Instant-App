@@ -42,26 +42,79 @@
         android:orientation="vertical">
 
         <FrameLayout
-            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:background="@drawable/edit_text_background"
             android:elevation="5dp">
+
             <EditText
-                android:textSize="20sp"
-                android:padding="8dp"
-                android:gravity="center"
-                android:layout_width="140dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:background="#0fff"/>
+                android:background="#0fff"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:paddingStart="10dp"
+                android:paddingTop="11dp"
+                android:paddingEnd="40dp"
+                android:paddingBottom="11dp"
+                android:textSize="32dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/lato_black"/>
+
+            <TextView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/edit_text_background"
+                android:backgroundTint="@color/colorAccent"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:fontFamily="@font/lato_bold"
+                android:text="kg"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@color/colorPrimary" />
         </FrameLayout>
 
-
-
-        <EditText
-            android:layout_width="120dp"
+        <FrameLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp" />
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="5dp">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#0fff"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:paddingStart="10dp"
+                android:paddingTop="11dp"
+                android:paddingEnd="40dp"
+                android:paddingBottom="11dp"
+                android:textSize="32dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/lato_black"/>
+
+            <TextView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/edit_text_background"
+                android:backgroundTint="@color/colorAccent"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:fontFamily="@font/lato_bold"
+                android:text="m"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="@color/colorPrimary" />
+        </FrameLayout>
+
 
     </LinearLayout>
 
