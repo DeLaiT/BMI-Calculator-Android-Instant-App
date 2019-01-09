@@ -1,63 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <data>
-
-    </data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:ignore="SpUsage">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
-        tools:ignore="SpUsage">
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
 
-        <RelativeLayout
-            android:id="@+id/logo"
+        <TextView
+            android:id="@+id/logo_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp">
+            android:fontFamily="@font/logo_font"
+            android:text="BMI"
+            android:textColor="@color/colorAccent"
+            android:textSize="72dp" />
 
-            <TextView
-                android:id="@+id/logo_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:fontFamily="@font/logo_font"
-                android:text="BMI"
-                android:textColor="@color/colorAccent"
-                android:textSize="72dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/logo_1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="-14dp"
-                android:fontFamily="@font/logo_font"
-                android:text="CALCULATOR"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="21dp" />
-        </RelativeLayout>
-
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_centerInParent="true">
-
-            <EditText
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:background="#666"/>
-
-            <EditText
-                android:layout_marginTop="10dp"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
+            android:layout_below="@id/logo_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-14dp"
+            android:fontFamily="@font/logo_font"
+            android:text="CALCULATOR"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="21dp" />
     </RelativeLayout>
-</layout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:elevation="5dp">
+            <EditText
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="#0fff"/>
+        </FrameLayout>
+
+
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
