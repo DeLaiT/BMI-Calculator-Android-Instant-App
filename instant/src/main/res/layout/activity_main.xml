@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
+    android:focusableInTouchMode="true"
     tools:ignore="SpUsage">
 
     <RelativeLayout
@@ -36,6 +37,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/input_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -49,32 +51,34 @@
             android:elevation="5dp">
 
             <EditText
+                android:id="@+id/weight_edit_text"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:background="#0fff"
+                android:fontFamily="@font/lato_black"
                 android:gravity="center"
                 android:inputType="numberDecimal|numberSigned"
                 android:paddingStart="10dp"
                 android:paddingTop="11dp"
                 android:paddingEnd="40dp"
                 android:paddingBottom="11dp"
-                android:textSize="32dp"
                 android:textColor="@color/colorPrimaryDark"
-                android:fontFamily="@font/lato_black"/>
+                android:textSize="32dp" />
 
             <TextView
+                android:id="@+id/weight_unit_button"
                 android:layout_width="46dp"
                 android:layout_height="46dp"
                 android:layout_gravity="end|center_vertical"
                 android:layout_marginEnd="7dp"
                 android:background="@drawable/edit_text_background"
                 android:backgroundTint="@color/colorAccent"
-                android:elevation="3dp"
-                android:gravity="center"
-                android:fontFamily="@font/lato_bold"
-                android:text="kg"
                 android:clickable="true"
+                android:elevation="3dp"
                 android:focusable="true"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="kg"
                 android:textColor="@color/colorPrimary" />
         </FrameLayout>
 
@@ -86,36 +90,62 @@
             android:elevation="5dp">
 
             <EditText
+                android:id="@+id/height_edit_text"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:background="#0fff"
+                android:fontFamily="@font/lato_black"
                 android:gravity="center"
-                android:inputType="numberDecimal|numberSigned"
+                android:inputType="numberSigned"
                 android:paddingStart="10dp"
                 android:paddingTop="11dp"
                 android:paddingEnd="40dp"
                 android:paddingBottom="11dp"
-                android:textSize="32dp"
                 android:textColor="@color/colorPrimaryDark"
-                android:fontFamily="@font/lato_black"/>
+                android:textSize="32dp" />
 
             <TextView
+                android:id="@+id/height_unit_button"
                 android:layout_width="46dp"
                 android:layout_height="46dp"
                 android:layout_gravity="end|center_vertical"
                 android:layout_marginEnd="7dp"
                 android:background="@drawable/edit_text_background"
                 android:backgroundTint="@color/colorAccent"
-                android:elevation="3dp"
-                android:gravity="center"
-                android:fontFamily="@font/lato_bold"
-                android:text="m"
                 android:clickable="true"
+                android:elevation="3dp"
                 android:focusable="true"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="m"
                 android:textColor="@color/colorPrimary" />
         </FrameLayout>
-
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_group"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_text_background"
+        android:backgroundTint="@color/colorAccent"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+        android:drawablePadding="5dp"
+        android:elevation="5dp"
+        android:focusable="true"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:paddingStart="18dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="Calculate"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
 
 </RelativeLayout>
