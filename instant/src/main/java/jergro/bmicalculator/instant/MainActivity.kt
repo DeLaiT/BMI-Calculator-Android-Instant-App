@@ -1,6 +1,7 @@
 package jergro.bmicalculator.instant
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -61,7 +62,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         submitButton.setOnClickListener {
-            TODO("NOT IMPLEMENTED")
+            val intent =  Intent(this, ResultActivity::class.java)
+            intent.putExtra("weight", weight)
+            intent.putExtra("height", height)
+            startActivity(intent)
         }
     }
 
