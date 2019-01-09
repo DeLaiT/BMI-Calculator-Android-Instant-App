@@ -1,6 +1,6 @@
 package jergro.bmicalculator.instant
 
 enum class HeightUnit {
-    M,
+    CM,
     IN,
 }

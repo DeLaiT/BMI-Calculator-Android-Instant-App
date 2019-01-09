@@ -117,11 +117,13 @@
                 android:focusable="true"
                 android:fontFamily="@font/lato_bold"
                 android:gravity="center"
-                android:text="m"
+                android:text="cm"
                 android:textColor="@color/colorPrimary" />
         </FrameLayout>
 
         <TextView
+            android:visibility="invisible"
+            tools:visibility="visible"
             android:id="@+id/submit_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
