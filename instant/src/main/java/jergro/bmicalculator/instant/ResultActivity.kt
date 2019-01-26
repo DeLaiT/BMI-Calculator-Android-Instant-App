@@ -65,7 +65,7 @@ class ResultActivity : AppCompatActivity() {
     }
 
     private fun showWeightAndHeight() {
-        weight_and_height.text = "Weight: %.1fkg\nHeight: %.1fm".format(weight, height)
+        weight_and_height.text = "Weight: %.0f kg\nHeight: %.0f m".format(weight, height)
     }
 
     private fun calculateBMI() {
