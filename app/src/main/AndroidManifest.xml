@@ -1,9 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="jergro.bmicalculator.instant">
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="jergro.bmicalculator.instant"
+    android:targetSandboxVersion="2">
+
+    <dist:module dist:instant="true" />
 
     <application
-        android:icon="@mipmap/ic_launcher">
-        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -11,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ResultActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
