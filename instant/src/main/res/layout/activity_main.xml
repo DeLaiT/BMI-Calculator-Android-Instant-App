@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:fontFamily="@font/logo_font"
+            android:fontFamily="@font/lato_black"
             android:text="BMI"
             android:textColor="@color/colorAccent"
             android:textSize="72dp" />
@@ -30,10 +30,10 @@
             android:layout_below="@id/logo_1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="-14dp"
-            android:fontFamily="@font/logo_font"
+            android:fontFamily="@font/lato_bold"
             android:text="CALCULATOR"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="21dp" />
+            android:textSize="20dp" />
     </RelativeLayout>
 
     <LinearLayout
@@ -57,7 +57,7 @@
                 android:background="#0fff"
                 android:fontFamily="@font/lato_black"
                 android:gravity="center"
-                android:inputType="numberDecimal|numberSigned"
+                android:inputType="numberDecimal"
                 android:paddingStart="10dp"
                 android:paddingTop="11dp"
                 android:paddingEnd="40dp"
@@ -96,7 +96,7 @@
                 android:background="#0fff"
                 android:fontFamily="@font/lato_black"
                 android:gravity="center"
-                android:inputType="numberSigned"
+                android:inputType="numberDecimal"
                 android:paddingStart="10dp"
                 android:paddingTop="11dp"
                 android:paddingEnd="40dp"

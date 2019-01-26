@@ -8,6 +8,7 @@ import android.view.View
 import android.view.View.*
 import android.widget.EditText
 import android.widget.TextView
+import java.lang.Exception
 
 @SuppressLint("SetTextI18n")
 class MainActivity : AppCompatActivity() {
@@ -93,6 +94,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun areInputsValid(): Boolean{
+        try{
+            weightEditText.text.toString().toDouble()
+            heightEditText.text.toString().toDouble()
+        } catch (e: Exception){
+            return false
+        }
+
         return !weightEditText.text.isNullOrEmpty() && !heightEditText.text.isNullOrEmpty()
     }
 }

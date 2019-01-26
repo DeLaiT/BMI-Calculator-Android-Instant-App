@@ -10,23 +10,23 @@
         android:id="@+id/result_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:fontFamily="@font/lato_black"
-        android:textColor="#000"
         android:text="Result"
-        android:textSize="36sp"
-        android:layout_margin="20dp"/>
+        android:textColor="#000"
+        android:textSize="36sp" />
 
     <TextView
+        android:id="@+id/result_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/result_description"
-        tools:text="Normal"
-        android:textSize="24sp"
-        android:maxWidth="220dp"
-        android:fontFamily="@font/lato_bold"
-        android:layout_marginTop="12dp"
         android:layout_below="@+id/result_title"
-        android:layout_marginStart="20dp"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/lato_bold"
+        android:maxWidth="220dp"
+        android:textSize="24sp"
+        tools:text="Normal\n(18 - 25) BMI" />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -36,7 +36,8 @@
         android:backgroundTint="@color/colorAccent"
         android:minWidth="112dp"
         android:paddingTop="12dp"
-        android:paddingBottom="12dp">
+        android:paddingBottom="12dp"
+        android:elevation="5dp">
 
         <TextView
             android:id="@+id/bmi_text"
@@ -52,5 +53,76 @@
             tools:text="20.3" />
     </FrameLayout>
 
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#D50000"
+            android:layout_marginBottom="2dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FF6D00"
+            android:layout_marginBottom="2dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFD600"
+            android:layout_marginBottom="2dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00C853"
+            android:layout_marginBottom="2dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFD600"
+            android:layout_marginBottom="2dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FF6D00"
+            android:layout_marginBottom="2dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#D50000"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/weight_and_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/lato_bold"
+        android:maxWidth="220dp"
+        android:textSize="24sp"
+        tools:text="Weight: 100kg\nHeight: 190cm"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:lineSpacingMultiplier="1.4"/>
+
+    <View
+        android:id="@+id/arrow"
+        android:layout_marginEnd="10dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="5dp"
+        android:background="@drawable/ic_forward_black_24dp"
+        android:backgroundTint="#000"
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>
