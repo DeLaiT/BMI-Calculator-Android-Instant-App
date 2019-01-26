@@ -18,7 +18,15 @@ class Category(val name: String, val start: Double, val end: Double) {
             Category("Obese Class III (Very severely obese)", 40.0, 45.0),
             Category("Obese Class IV (Morbidly Obese)", 45.0, 50.0),
             Category("Obese Class V (Super Obese)", 50.0, 60.0),
-            Category("Obese Class VI (Hyper Obese)", 60.0, 1000.0)
+            Category("Obese Class VI (Hyper Obese)", 60.0, 100000000.0)
         )
+
+        fun getCategoryByBMI(bmi: Double) : Category {
+            categories.forEach {
+                if (it.isInRange(bmi))
+                    return it
+            }
+            return categories.last()
+        }
     }
 }

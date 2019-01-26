@@ -20,6 +20,7 @@ class ResultActivity : AppCompatActivity() {
 
     private fun displayResult() {
         bmi_text.text = "%.01f".format(bmi)
+        result_description.text = Category.getCategoryByBMI(bmi).name
     }
 
     private fun getIntentData(){
